@@ -6,7 +6,7 @@ const REMOVE_ITEM_COUNTER = "REMOVE_ITEM_COUNTER";
 const RESET = "RESET";
 
 export const fetchMenuData = () => async (dispatch, getState) => {
-  const res = await fetch("http://localhost:3000/menu");
+  const res = await fetch("https://menu-server-json.herokuapp.com/menu");
   const json = await res.json();
   const jsondata = [
     ...json.map((item) => {
