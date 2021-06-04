@@ -19,6 +19,7 @@ function Cart() {
   const dispatch = useDispatch();
 
   function handleAdd(e) {
+    console.log(e);
     dispatch(addCounter(e.target.id));
   }
   function handleSubtract(e) {
